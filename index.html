@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Bethel Registration Form</h1>
+    <p id="description">
+      Kindly Fill Out This Form With The Proper Information
+    </p>
+    <form id="Registration-Form">
+      <label for="name" id="name-label"
+        >Surname and Last Name
+        <input placeholder="Enter your name" id="name" type="text" required />
+      </label>
+      <label for="email" id="email-label"
+        >Email Address
+        <input
+          placeholder="Your email address"
+          type="text"
+          id="email"
+          required
+        />
+      </label>
+      <label for="number" id="number-label"
+        >Phone Number
+        <input
+          placeholder="Phone number"
+          type="text"
+          max="15"
+          min="11"
+          id="number"
+          required
+        />
+      </label>
+      <label for="dropdown" id="dropdown-label"
+        >select age bracket
+        <select name="Dropdown" id="Dropdown">
+          <option value="">select one</option>
+          <option value="18-25">18-25</option>
+          <option value="26-30">26-30</option>
+          <option value="31-34">31-34</option>
+          <option value="35-39">35-39</option>
+          <option value="40-45">40-45</option>
+        </select>
+      </label>
+      <fieldset>
+        <legend>Gender</legend>
+        <label for="male" id="male-label">
+          <input id="male" value="male" name="Gender" type="radio" />Male
+        </label>
+        <label for="female" id="female-label">
+          <input
+            id="female-label"
+            value="female"
+            name="Gender"
+            type="radio"
+          />Female
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Hobbies</legend>
+        <label for="music">
+          <input
+            name="music"
+            value="Listening to music"
+            id="music"
+            type="checkbox"
+          />Listening to music
+        </label>
+        <label for="travelling">
+          <input
+            name="travelling"
+            value="love travelling"
+            id="travelling"
+            type="checkbox"
+          />Love travelling
+        </label>
+        <label for="watching football">
+          <input
+            name="watching football"
+            value="watching football"
+            id="watching football"
+            type="checkbox"
+          />Watching football
+        </label>
+        <label for="getting along with people">
+          <input
+            name="getting along with people"
+            value="getting along with people"
+            id="getting along with people"
+            type="checkbox"
+          />Getting along with people
+        </label>
+        <label for="movie">
+          <input
+            name="movie"
+            value="watching movie"
+            id="movie"
+            type="checkbox"
+          />Watching movie
+        </label>
+      </fieldset>
+      <label
+        >Any other messega
+        <textarea name="comment" id="comment"></textarea>
+      </label>
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>
